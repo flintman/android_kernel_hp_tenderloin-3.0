@@ -90,6 +90,12 @@ allowed_warnings = set([
     "soc-core.c:1719",
     "xt_log.h:50",
     "vx6953.c:3124",
+	"swab.h:29",#warning: 'sport' may be used uninitialized in this function [-Wmaybe-uninitialized]
+	"cifssmb.c:5318", #warning: array subscript is above array bounds [-Warray-bounds]
+	"cifssmb.c:5608", #warning: array subscript is above array bounds [-Warray-bounds]
+	"xt_socket.c:305",#warning: 'saddr' may be used uninitialized in this function [-Wmaybe-uninitialized]
+	"xt_socket.c:161",#warning: 'protocol' may be used uninitialized in this function [-Wmaybe-uninitialized]
+	"inet_hashtables.h:356", #warning: 'sport' may be used uninitialized in this function [-Wmaybe-uninitialized]
  ])
 
 # Capture the name of the object file, can find it.
